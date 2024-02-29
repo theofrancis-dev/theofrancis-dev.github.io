@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 4 Solution</title>
+  <script>
+    var names = []; // DO NOT REMOVE
+  </script>
+  <script src="SpeakHello.js"></script>
+  <script src="SpeakGoodBye.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    body {      
+      background-color: azure;
+      margin : 10px;
+    }
+    h1,h3 {
+      text-align: center;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: lightgrey;
+      color: black;
+      text-align: center;
+      padding : 5px;
+  }
+  </style>
+</head>
+<body>
+  <h1>Assigment Module 4 Solution</h1>
+  <p>Please, press F12 to going in Dev Mode.</p>
+  <p>See the output in the console view</p>
+  <br>
+  <h4><i>SpeakGoodBye.js</i></h4>
+  <code>
+  (function (window){<br>
+    var speakWord = "Good Bye";<br>
+    var byeSpeaker = {};<br>
+    <br>
+    byeSpeaker.speak = function (name){<br>
+      console.log(speakWord + " " + name);<br>
+    }<br>
+    <br>
+    window.byeSpeaker = byeSpeaker;<br>
+  })(window);<br><br>
+</code>
+  <hr>
+  <h4><i>SpeakHello.js</i></h4>
+  <code>
+  (function (window){<br>
+    var speakWord = "Hello";<br>
+    helloSpeaker = {};<br>
+    helloSpeaker.speak = function (name){<br>
+      console.log(speakWord + " " + name);<br>
+    }<br>
+    window.helloSpeaker = helloSpeaker;<br>
+  })(window);<br><br>
+</code>
+<h4><i>script.js</i></h4>
+<code>
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];<br>
+  for ( var n in names ) {<br>
+    firstName = names[n];   <br> 
+    var firstLetter = firstName.toLowerCase().charAt(0);<br>
+    if (firstLetter == 'j') {<br>
+      byeSpeaker.speak (firstName);<br>
+    } else {<br>
+      helloSpeaker.speak (firstName);<br>
+    }<br>
+}<br>
+<hr>
+</code>
+
+<div class="footer">
+  Coursera Web Develoment.
+  <a href="https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/assignments/assignment4/Assignment-4.md" target="_blank">
+  Assignment Solution for Module 4. </a>            
+  <a href="https://teopinillo.github.io/">teopinillo</a> 10/2021
+</div>
+
+</body>
+</html>
