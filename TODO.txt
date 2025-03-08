@@ -1,0 +1,151 @@
+add: 
+
+https://layout.bradwoods.io  CSS Layout Generator
+https://codeseven.github.io/toastr/demo.html
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+sources
+
+photo background: Photo by <a target="_blank" href="https://freerangestock.com/photographer/Pexels/4556">Pexels</a> from <a target="_blank" href="https://freerangestock.com">Freerange Stock</a>
+
+
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              src="assets/img/bg-masthead-2.png"
+              alt="..."
+            />
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <a href="http://50.116.32.27:8009/" target="_blank">
+                <h4>Coral PayRoll</h4>
+              </a>
+              <p class="text-black-50 mb-0">Pay Roll App</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project Weather Comparixon-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/weather-comparison.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4 class="text-white">
+                    <a
+                      href="http://aiquilibrium.xyz/weather-comparison/"
+                      target="_blank"
+                      >Weather Comparison</a
+                    >
+                  </h4>
+                  <p class="mb-0 text-white-50">
+                    Pure JS. Compare Weather between tow cities
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://theofrancis-dev.github.io/paradigmpetpro/">Paradigm Pet Professionals</a>
+          <p>html, css, js</p>
+        </div>
+        
+
+        
+        <!-- Project News Today-->
+        <div class="row gx-0 justify-content-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/news-today.jpg"
+              alt="News Today"
+            />
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4 class="text-white">
+                    <a
+                      href="http://50.116.32.27:4001/topheadlines"
+                      target="_blank"
+                      >News Today</a
+                    >
+                  </h4>
+                  <p class="mb-0 text-white-50">
+                    Node.JS. Fetch news from
+                    <a href="https://newsapi.org/" target="_blank"> NewsApi</a>
+                    and
+                    <a
+                      href=""
+                      target="https://mediastack.com/documentation"
+                      _blank
+                    >
+                      Media Stack</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        --slogan---
+        html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Web Apps</title>
+  <style>
+    h1 { font-family: Arial, sans-serif; text-align: center; color: #333; }
+  </style>
+</head>
+<body>
+  <h1 id="headline">Custom Software Design Solutions</h1>
+
+  <script>
+    const headlines = [
+      "Tailored Tech That Transforms",
+      "Your Vision, Coded to Life",
+      "Bespoke Apps, Built Brilliant",
+      "Crafting Digital Dreams",
+      "Custom Code, Infinite Possibilities",
+      "Web Apps, Your Way",
+      "From Idea to Epic: Your App Starts Here"
+    ];
+
+    let currentIndex = 0;
+    const headlineElement = document.getElementById("headline");
+
+    function rotateHeadline() {
+      headlineElement.textContent = headlines[currentIndex];
+      currentIndex = (currentIndex + 1) % headlines.length; // Loop back to start
+    }
+
+    // Change every 3 seconds (3000ms)
+    setInterval(rotateHeadline, 3000);
+
+    // Start with the first one immediately
+    rotateHeadline();
+  </script>
+</body>
+</html>
+

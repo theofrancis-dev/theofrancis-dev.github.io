@@ -1,0 +1,52 @@
+:root {
+  --accent: #2BD22F;
+}
+
+body {
+  background: url("../assets/img/bg-masthead-2.png") center/cover no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 120px; /* Your working value */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #f8f9fa !important;
+}
+
+.nav-link:hover {
+  color: #76FF03 !important;
+}
+
+#lbl_appname {
+  color: var(--accent);
+  font-size: 2em;
+}
+
+h3 {
+  cursor: pointer;
+}
+
+h3:hover {
+  text-shadow: 2px 2px 4px grey;
+}
+
+/* Optional: Style the cards */
+.feature-card {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
