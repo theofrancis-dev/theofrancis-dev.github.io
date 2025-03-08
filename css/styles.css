@@ -1,5 +1,21 @@
-:root {
-  --accent: #2BD22F;
+:root {  
+  --primary: #2BD22F;
+  --primary-light:#50FD53;
+  --primary-darker-1:#20A723;
+  --primary-darker-2:#157D18;
+  --primary-darker-3:#0b560d;
+  --primary-darker-4:#043205;
+  --primary-darker-5: #011501;
+
+  --secondary: #454d66;
+  --secondary-shade-1 : #e1e3ea;
+  --secondary-shade-2 : #a4abc1;
+  --secondary-shade-3 : #677398;
+  --secondary-shade-4 : #3e455b;
+
+  --accent: #dad873;
+  --background: #efeeb4;
+  --success: #58b368;
 }
 
 body {
@@ -49,4 +65,16 @@ h3:hover {
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-darker-5);
+  color: var(--primary);
+  text-align: center;
+  padding : 5px;    
+  padding: 15px;
 }
