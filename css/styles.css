@@ -54,7 +54,7 @@ h3 {
 }
 
 h3:hover {
-  text-shadow: 2px 2px 4px grey;
+  text-shadow: 8px 8px 8px var(--background);
 }
 
 /* Optional: Style the cards */
@@ -77,4 +77,8 @@ h3:hover {
   text-align: center;
   padding : 5px;    
   padding: 15px;
+}
+
+#title-projects {
+  color : var(--primary-light);
 }
