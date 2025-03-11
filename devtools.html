@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIQuilibrium - Developer Tools</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <link href="../css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./css/styles.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -17,284 +16,247 @@
 
     <main>
         <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id="springboot">
-                    <h3>Spring Boot</h3>
-
-                    <div id="springboot_options" style="display:none">
-                        <a href="https://start.spring.io/" target="_blank">Spring Initialzr</a><br>
-                        <a href="https://docs.spring.io/spring-boot/appendix/application-properties/index.html"
-                           target="_blank">application-properties</a>                        
-                    </div>
-
+        
+            <div class="accordion" id="accordionTools">
+        
+                <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Spring Boot
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                            <div class="accordion-body">                            
+                                    <a href="https://start.spring.io/" target="_blank">Spring Initialzr</a><br>
+                                    <a href="https://docs.spring.io/spring-boot/appendix/application-properties/index.html"
+                                        target="_blank">application-properties</a>
+                            </div>
+                        </div>
                 </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col">
-                <div id="jquery_menu">
-                    <h3>jQuery</h3>
-                    <div id="jquery_list" style="display:none">
-                        <ul>
-                            <li><a href="https://releases.jquery.com/" target="_blank">releases</a></li>
-                            <li><a href="https://api.jquery.com/" target="_blank">API</a></li>
-                            <li><a href="https://api.jquery.com/category/selectors/" target="_blank">Selectors</a></li>
-                            <li><a href="https://api.jquery.com/category/events/" target="_blank">Events</a></li>
-                            <li><a href="https://api.jquery.com/category/effects/" target="_blank">Animation Effects</a></li>
-                            <li><a href="https://learn.jquery.com/effects/queue-and-dequeue-explained/" target="_blank">Animation, queue & dequeue explained</a></li>
-                        </ul>   
-                    </div>
+                
+                <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            JQuery
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                            <div class="accordion-body">                               
+                                    <a href="https://releases.jquery.com/" target="_blank">releases</a><br>
+                                    <a href="https://api.jquery.com/" target="_blank">API</a><br>
+                                    <a href="https://api.jquery.com/category/selectors/" target="_blank">Selectors</a><br>
+                                    <a href="https://api.jquery.com/category/events/" target="_blank">Events</a><br>
+                                    <a href="https://api.jquery.com/category/effects/" target="_blank">Animation Effects</a><br>
+                                    <a href="https://learn.jquery.com/effects/queue-and-dequeue-explained/" target="_blank">Animation, queue & dequeue explained</a><br>                               
+                            </div>
+                        </div>
                 </div>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <h3>JavaScript</h3>
-                <a href="https://www.toptal.com/developers/javascript-minifier" target="_blank">JS Minifier</a><br>
-                <a href="https://jscompress.com/" target="_blank">JS Compress</a><br>
-                <a href="https://javascriptobfuscator.com/" target="_blank">JS Obfuscator</a><br>
-                <a href="http://stunnix.com/prod/jo/" target="_blank">JS Obfuscator, stunnix</a><br>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <h3>Databases</h3>
-				<ul>
-                <li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">PostgreSQL</a></li>
-                <li><a href="https://www.pgadmin.org/download/" target="_blank">PgAdmin</a></li>
-				</ul>
-                <hr>
-            </div>
-        </div>
-
-        <!--Design-->
-        <div class="row">
-            <div class="col">
-                <div id="design_menu">
-                    <h3>Design</h3>
-                    <div id="design_list" style="display:none">
+                
+                <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            JavaScript
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                            <div class="accordion-body">
+                            <a href="https://www.toptal.com/developers/javascript-minifier" target="_blank">JS Minifier</a><br>
+                            <a href="https://jscompress.com/" target="_blank">JS Compress</a><br>
+                            <a href="https://javascriptobfuscator.com/" target="_blank">JS Obfuscator</a><br>
+                            <a href="http://stunnix.com/prod/jo/" target="_blank">JS Obfuscator, stunnix</a><br>
+                            </div>
+                        </div>
+                </div>
+            
+                <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDB" aria-expanded="false" aria-controls="collapseDB">
+                            Databases
+                            </button>
+                        </h2>
+                        <div id="collapseDB" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                            <div class="accordion-body">
+                                <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">PostgreSQL</a><br>
+                                <a href="https://www.pgadmin.org/download/" target="_blank">PgAdmin</a>
+                                </div>
+                        </div>
+                </div>
+        
+                <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesign" aria-expanded="false" aria-controls="collapseDesign">
+                            Design
+                            </button>
+                        </h2>
+                        <div id="collapseDesign" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                            <div class="accordion-body"> 
+                                <a href="https://startbootstrap.com/" target="_blank">Free Boostrap</a><br>
+                                <a href="https://fastbootstrap.com/components/dropdown/" target="_blank">Fast Boostrap</a><br>
+                                <a href="http://www.network-science.de/ascii/" target="_blank">ASCII Generator</a><br>	
+                                <a href="https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20" target="_blank">Patorjk ASCII Generator</a><br>
+                                <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">Color Names</a><br>
+                                <a href="https://htmlcolorcodes.com/" target="_blank">Color Codes</a><br>                        
+                                <a href="https://worldvectorlogo.com/" target="_blank">LOGOS -Vector Format-</a><br>
+                                <a href="https://dribbble.com/" target="_blank">Top designers</a><br>
+                                <a href="https://www.canva.com/create/mood-boards/" target="_blank">Mood Boards With Canvas</a><br>
+                                <a href="https://slickplan.com/"  target="_blank">Slickplan. Website planning tool</a><br>
+                                <a href="https://www.lucidchart.com/pages/"  target="_blank">Lucidchart. Diagramming powered by intelligence</a><br>
+                                <a href="https://nationalgriefawarenessday.com/48796/website-sitemap-template#content" target="_blank">Websites Sitemap Templates</a><br>
+                                <a href="https://www.figma.com/wireframe-tool/" target="_blank">Figma - Wireframe</a><br>
+                                <a href="https://mockflow.com/" target="_blank">Mockflow - Super Easy Wriframming Tool</a><br>
+                                <a href="https://miro.com/" target="_blank">Miro - AI-powered virtual whiteboard platform</a><br>
+                                <a href="favicon.io" target="_blank">Favicon.io - Favicon Generator</a><br> 
+                            </div>
+                        </div>
+                </div>
+                                
+                <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePalette" aria-expanded="false" aria-controls="collapsePalette">
+                                    Color Pelette Generator Tools
+                                </button>
+                                </h2>
+                                <div id="collapsePalette"class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                                    <ul>
+                                        <li><a href="https://color.adobe.com/" target="_blank">Adobe Color CC</a></li>
+                                        <li><a href="https://www.khroma.co/" target="_blank">Khroma</a></li>
+                                        <li><a href="https://m3.material.io/styles/color/system/overview" target="_blank">Color Tool - Material Design</a></li>
+                                        <li><a href="https://mycolor.space/" target="_blank">Color Space</a></li>             
+                                        <li><a href="https://www.designspiration.com/" target="_blank">Design Aspiration</a></li>
+                                        <li><a href="https://coolors.co/" target="_blank">Color Palettes Generator</a></li>
+                                        <li><a href="https://colors.muz.li/ai-color-combination-generator/" target="_blank">Muzli AI Color Combination Generator</a></li>
+                                        <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a></li>
+                                        <li><a href="https://venngage.com/tools/color-blind-simulator" target="_blank">Color Blind Simulator</a></li>
+                                    </ul>
+                                </div>
+                </div>                        
+                
+                <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages">
+                                Images
+                            </button>
+                            </h2>
+                            <div id="collapseImages" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank">Emoji Cheat Sheet</a></li>
+                                        <li><a href="https://www.flaticon.com/" target="_blank">Flaticon</a></li>
+                                        <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+                                        <li><a href="https://www.fotor.com/images/create" target="_blank">Fotor AI Image Generator</a></li>
+                                        <li><a href="https://www.brandcrowd.com/" target="_blank">Logo Design</a></li>
+                                        <li><a href="https://developers.google.com/fonts/docs/material_icons">Material Design Icons</a></li>
+                                        <li><a href="https://gratisography.com/">Gratisography</a></li>
+                                        <li><a href="https://pixabay.com/">Pixabay - royalty-free images & royalty-free stock</a></li>
+                                        <li><a href="https://www.pexels.com/">Pexels -  The best free stock photos, royalty free images & videos shared by creators</a></li>
+                                        <li><a href="https://www.istockphoto.com/">istockphoto</a></li>
+                                        <li><a href="https://freerangestock.com/">FreeRange Great Photos Totally Free </a></li>
+                                        <li><a href="https://loc.getarchive.net/">Get Archive - LOC's Public Domain Image Collections</a></li>
+                                        <li><a href="https://www.rawpixel.com/">Raw Pixel</a></li>
+                                        <li><a href="https://pxhere.com/">PxHere - Free of copyrights under CC0. Do whatever you want.  </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>  
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI" aria-expanded="false" aria-controls="collapseAI">
+                        AI Collection
+                        </button>
+                    </h2>
+                    <div id="collapseAI" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                        <div class="accordion-body">
                         <ul>
-                        <li><a href="https://startbootstrap.com/" target="_blank">Free Boostrap</a></li>
-                        <li><a href="https://fastbootstrap.com/components/dropdown/" target="_blank">Fast Boostrap</a></li>
-                        <li><a href="http://www.network-science.de/ascii/" target="_blank">ASCII Generator</a></li>	
-                        <li><a href="https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20" target="_blank">Patorjk ASCII Generator</a></li>
-                        <li><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">Color Names</a></li>
-                        <li><a href="https://htmlcolorcodes.com/" target="_blank">Color Codes</a></li>                        
-                        <li><a href="https://worldvectorlogo.com/" target="_blank">LOGOS -Vector Format-</a></li>
-                        <li><a href="https://dribbble.com/" target="_blank">Top designers</a></li>
-                        <li><a href="https://www.canva.com/create/mood-boards/" target="_blank">Mood Boards With Canvas</a></li>
-                        <li><a href="https://slickplan.com/"  target="_blank">Slickplan. Website planning tool</a></li>
-                        <li><a href="https://www.lucidchart.com/pages/"  target="_blank">Lucidchart. Diagramming powered by intelligence</a></li>
-                        <li><a href="https://nationalgriefawarenessday.com/48796/website-sitemap-template#content" target="_blank">Websites Sitemap Templates</a></li>
-                        <li><a href="https://www.figma.com/wireframe-tool/" target="_blank">Figma - Wireframe</a></li>
-                        <li><a href="https://mockflow.com/" target="_blank">Mockflow - Super Easy Wriframming Tool</a></li>
-                        <li><a href="https://miro.com/" target="_blank">Miro - AI-powered virtual whiteboard platform</a></li>
-                        <li><a href="favicon.io" target="_blank">Favicon.io - Favicon Generator</a></li>
-                        <li><a href="" target="_blank"></a></li>
+                            <li><a href="https://www.deepseek.com/" target="_blank">Deepseek</a></li>
+                            <li><a href="https://chatgpt.com/" target="_blank">ChatGTP</a></li>
+                            <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+                            <li><a href="https://Copilot.Microsoft.com" target="_blank">softgen.ai </a></li>                     
+                            <li><a href="https://softgen.ai/" target="_blank">AI Web App Developer</a></li>
+                            <li><a href="https://www.cursor.com/"> The AI Code Editor</a></li>
+                            <li><a href="https://www.tempolabs.ai/">Tempo Labs - Build React Apps</a></li>
+                            <li><a href="https://chat.mistral.ai/chat">Mistral.AI Chat</a></li>                        
                         </ul>
-                        <!--website img-->
-                        <div>
-                            <img src="./img/canvas_website.png" alt="canvas" />
                         </div>
                     </div>
                 </div>
-				<hr>
-            </div>
-        </div>
-
-        <!--Color Pelette Generator Tools-->
-        <div class="row">
-            <div class="col">
-                <div id="palette_menu">
-                    <h3>Color Pelette Generator Tools</h3>
-                    <div id="palette_list" style="display:none">
-                        <ul>
-                        <li><a href="https://color.adobe.com/" target="_blank">Adobe Color CC</a></li>
-                        <li><a href="https://www.khroma.co/" target="_blank">Khroma</a></li>
-                        <li><a href="https://m3.material.io/styles/color/system/overview" target="_blank">Color Tool - Material Design</a></li>
-                        <li><a href="https://mycolor.space/" target="_blank">Color Space</a></li>             
-                        <li><a href="https://www.designspiration.com/" target="_blank">Design Aspiration</a></li>
-                        <li><a href="https://coolors.co/" target="_blank">Color Palettes Generator</a></li>
-                        <li><a href="https://colors.muz.li/ai-color-combination-generator/" target="_blank">Muzli AI Color Combination Generator</a></li>
-                        <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a></li>
-                        <li><a href="https://venngage.com/tools/color-blind-simulator" target="_blank">Color Blind Simulator</a></li>
-                        </ul>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseData" aria-expanded="false" aria-controls="collapseData">
+                        Data and Information
+                        </button>
+                    </h2>
+                    <div id="collapseData" class="accordion-collapse collapse show" data-bs-parent="#accordionTools">
+                        <div class="accordion-body">
+                            <a href="https://publicapis.io/" target="_blank">Public APIs</a><br>
+                            <a href="https://github.com/public-apis/public-apis" target="_blank">GitHub - Public APIs for free</a><br>
+                            <a href="https://publicapis.dev/" target="_blank">Cruz, M. - Public APIs for free</a><br>
+                            <a href="https://www.cancer.gov/research" target="_blank">Cancer research</a><br>
+                            <a href="https://data.nasa.gov/" target="_blank">Nasa</a><br>
+                            <a href="https://opendata.cityofnewyork.us/" target="_blank">New York Open Data</a><br>
+                            <a href="https://data.gov/" target="_blank">US Goverment Data</a><br>
+                            <a href="https://www.kaggle.com/datasets" target="_blank">Datasets Multiples</a><br>
+                            <a href="http://www.geonames.org/" target="_blank">GeoNames</a><br>
+                            <a href="https://simplelocalize.io/data/locales/" target="_blank"> Locale Codes</a><br>
+                            <a href="https://digitalfortress.tech/tips/top-15-commonly-used-regex/" target="_blank">Top 15 Commonly Used Regex</a><br>
+                            <a href="https://regexr.com/" target="_blank">Test Regualar Expressions</a><br>
+                            <a href="https://randomuser.me/" target="_blank">Random User Generator</a>  
+                        </div>                  
                     </div>
                 </div>
-				<hr>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-			<div id="images_menu">
-				<h3>Images</h3>
-					<div id="images_list" style="display:none">
-					<ul>
-						<li><a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank">Emoji Cheat Sheet</a></li>
-						<li><a href="https://www.flaticon.com/" target="_blank">Flaticon</a></li>
-						<li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
-						<li><a href="https://www.fotor.com/images/create" target="_blank">Fotor AI Image Generator</a></li>
-						<li><a href="https://www.brandcrowd.com/" target="_blank">Logo Design</a></li>
-						<li><a href="https://developers.google.com/fonts/docs/material_icons">Material Design Icons</a></li>
-						<li><a href="https://gratisography.com/">Gratisography</a></li>
-                        <li><a href="https://pixabay.com/">Pixabay - royalty-free images & royalty-free stock</a></li>
-                        <li><a href="https://www.pexels.com/">Pexels -  The best free stock photos, royalty free images & videos shared by creators</a></li>
-                        <li><a href="https://www.istockphoto.com/">istockphoto</a><li>
-                        <li><a href="https://freerangestock.com/">FreeRange Great Photos Totally Free </a><li></li>
-                        <li><a href="https://loc.getarchive.net/">Get Archive - LOC's Public Domain Image Collections</a></li>
-                        <li><a href="https://www.rawpixel.com/">Raw Pixel</a></li>
-                        <li><a href="https://pxhere.com/">PxHere - Free of copyrights under CC0. Do whatever you want.  </a></li>
-					</ul>
-					</div>
-				</div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-			<div id="ai_menu">
-				<h3>AI Collection</h3>
-					<div id="ai_list" style="display:none">
-					<ul>
-						<li><a href="https://www.deepseek.com/" target="_blank">Deepseek</a></li>
-						<li><a href="https://chatgpt.com/" target="_blank">ChatGTP</a></li>
-						<li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
-						<li><a href="https://Copilot.Microsoft.com" target="_blank">softgen.ai </a></li>                     
-						<li><a href="https://softgen.ai/" target="_blank">AI Web App Developer</a></li>
-						<li><a href="https://www.cursor.com/"> The AI Code Editor</a></li>
-						<li><a href="https://www.tempolabs.ai/">Tempo Labs - Build React Apps</a></li>
-                        <li><a href="https://chat.mistral.ai/chat">Mistral.AI Chat</a></li>
-                        
-					</ul>
-					</div>
-				</div>
-            </div>
-        </div>
-        
-        <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                        Other Tools
+                        </button>
+                    </h2>
+                    <div id="collapseOther" class="accordion-collapse collapse" data-bs-parent="#accordionTools">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html" target="_blank">XML Sitemap Validator</a></li>				
+                                <li><a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank">ScreamingFrog. Desktop App website crawler</a></li>
+                                <li><a href="https://www.xml-sitemaps.com/" target="_blank">XML Site Maps</a></li>
+                                <li><a href="https://developers.google.com/fonts/docs/material_icons">Material Design Icons</a></li>
+                                <li><a href="https://gratisography.com/">Gratisography</a></li>
+                                <li><a href="https://loremipsum.io">Lorem Ipsum - Generator</a></li>
+                                <li><a href="https://tableconvert.com/">Convert Excel to Markdown Table Online</a></li>
+                                <a href="https://www.aliciaramirez.com/closing-tags-checker/>Closing Tag Checker</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>			
 
-        <div class="row">
-            <div class="col">
-                <div id="dataandinfo">
-                    <h3>Data and Information</h3>
-                    <div id="dataandinfo_options" style="display:none">
-                        <a href="https://publicapis.io/" target="_blank">Public APIs</a><br>
-                        <a href="https://github.com/public-apis/public-apis" target="_blank">GitHub - Public APIs for free</a><br>
-                        <a href="https://publicapis.dev/" target="_blank">Cruz, M. - Public APIs for free</a><br>
-                        <a href="https://www.cancer.gov/research" target="_blank">Cancer research</a><br>
-                        <a href="https://data.nasa.gov/" target="_blank">Nasa</a><br>
-                        <a href="https://opendata.cityofnewyork.us/" target="_blank">New York Open Data</a><br>
-                        <a href="https://data.gov/" target="_blank">US Goverment Data</a><br>
-                        <a href="https://www.kaggle.com/datasets" target="_blank">Datasets Multiples</a><br>
-                        <a href="http://www.geonames.org/" target="_blank">GeoNames</a><br>
-                        <a href="https://simplelocalize.io/data/locales/" target="_blank"> Locale Codes</a>
-                        <a href="https://digitalfortress.tech/tips/top-15-commonly-used-regex/" target="_blank">Top 15 Commonly Used Regex</a>
-                        <a href="https://regexr.com/" target="_blank">Test Regualar Expressions</a>
-                        <a href="https://randomuser.me/" target="_blank">Random User Generator</a>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHosting" aria-expanded="false" aria-controls="collapseHosting">
+                        Hosting
+                    </button>
+                    </h2>
+                    <div id="collapseHosting" class="accordion-collapse collapse" data-bs-parent="#accordionTools">
+                    <div class="accordion-body">
+                        <a href="https://www.infinityfree.com/">InfinityFree</a>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <hr>
-
-        <div class="row">
-            <div class="col">
-			<div id="others_menu">
-				<h3>Other Tools</h3>
-					<div id="others_list" style="display:none">
-					<ul>
-						<li><a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html" target="_blank">XML Sitemap Validator</a></li>				
-                        <li><a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank">ScreamingFrog. Desktop App website crawler</li>
-						<li><a href="https://www.xml-sitemaps.com/" target="_blank">XML Site Maps</a></li>
-
-						<li><a href="https://developers.google.com/fonts/docs/material_icons">Material Design Icons</a></li>
-						<li><a href="https://gratisography.com/">Gratisography</a></li>
-                        <li><a href="https://loremipsum.io">Lorem Ipsum - Generator</a>
-						<li><a href="https://tableconvert.com/">Convert Excel to Markdown Table Online</a>
-					</ul>
-					</div>
-				</div>
-            </div>
-        </div>
-        
-		<h2>Hosting Optiosn</h2>
-		<a href="https://www.infinityfree.com/">InfinityFree</a>
-        <hr>
-
-        </div>
+            </div> <!--accordion-->
+        </div> <!--container-->
     </main>
-    <!-- Bootstrap JS and dependencies -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#jquery_menu").click(function () {
-                $("#jquery_list").slideToggle("fast");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#springboot").click(function () {
-                $("#springboot_options").slideToggle("fast");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#dataandinfo").click(function () {
-                $("#dataandinfo_options").slideToggle("fast");
-            });
-        });
-		
-		$(document).ready(function () {
-            $("#images_menu").click(function () {
-                $("#images_list").slideToggle("fast");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#ai_menu").click(function () {
-                $("#ai_list").slideToggle("swing");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#design_menu").click(function () {
-                $("#design_list").slideToggle("swing");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#palette_menu").click(function () {
-                $("#palette_list").slideToggle("swing");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#others_menu").click(function () {
-                $("#others_list").slideToggle("swing");
-            });
-        });
-
-    </script>
-
+    
     <footer class="footer py-3 bg-light">
         <div class="container">
           <span class="text-muted">&copy AIquilibrium, 2025. All right reserved.</span>
         </div>
     </footer>
 
-</body>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+   </body>
 
 
 </html>
